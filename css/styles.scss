@@ -1,0 +1,138 @@
+$verde: #76b900;
+$negro-palido: #343A40;
+$negro-opaco: #1B1B1B;
+$claro: #F0F0F0;
+$blanco: #FFFFFF;
+@mixin resaltado($bg-color, $padding){
+	background-color: $bg-color;
+	color: $blanco;
+	padding: $padding;
+}
+
+body{
+	background-color: #DDDDDD;
+}
+.relleno{
+	height: 55px;
+}
+nav{
+	background-color: $negro-palido;
+}
+.breadcrumb{
+	margin: 20px 0;
+}
+.jumbotron{
+	background-color: #1B1B1B;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.destacado{
+	@include resaltado($verde, 20px);
+	margin-bottom: 20px;
+	font-size: 2em;
+	text-align: center;
+}
+.green{
+	color: $verde;
+}
+h1{
+	color: $blanco;
+}
+h2, h3{
+	text-align: center;
+}
+h2{
+	margin-bottom: 30px;
+}
+.titulo{
+	@include resaltado($negro-opaco, 20px);
+	margin-bottom:20px;
+	font-size: 2.5em;
+	font-weight: 500;
+	text-align: center;
+}
+.banner{
+	background-color: $blanco;
+}
+.banner img{
+	display: block;
+	margin: 15px auto;
+}
+.descripcion{
+	background-color: $claro;
+	border-radius: 10px;
+	margin: 5px 0;
+}
+.card_producto{
+	flex: 1 200px;
+	background-color: $claro;
+	margin: 5px;
+}
+.card_producto .btn{
+	background-color: $verde;
+	border: none;
+	font-weight: bold;
+	width: 100%;
+}
+.suscribirse{
+	margin: 5px auto;
+}
+.modal-header{
+	@include resaltado($negro-palido, 10px);
+}
+.close{
+	color: $blanco;
+}
+footer{
+	@include resaltado($negro-palido, 5px);
+	margin-top: 20px;
+}
+footer a{
+	color: $verde; 
+}
+address{
+	margin: 0;
+}
+.row{
+	margin: 0;
+}
+label{
+	font-weight: bold;
+}
+.enviar{
+	width: 200px;
+	background-color: $verde;
+	border: none;
+	font-weight: bold;
+}
+table{
+	min-width: 1100px;
+}
+.badge-primary{
+	margin-left: 10px;
+	font-size: 1em;
+}
+.tipo-tarjeta{
+	background-color: $verde;
+	color: $blanco;
+	font-weight: bold; 
+}
+.navbar-nav .active .nav-link{
+	color: $verde;
+}
+.nav-pills .nav-item .active{
+	background-color: $verde;  
+}
+.tipo-tarjeta a{
+	color: $blanco;
+	text-decoration: none;
+}
+#productos *{
+	width: 100%;
+}
+#medios .row > div{
+	margin-bottom: 20px;
+}
+#comprar{
+	width: 100%;
+}

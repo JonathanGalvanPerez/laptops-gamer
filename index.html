@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- build:css dist/index.css -->
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="node_modules/open-iconic/font/css/open-iconic-bootstrap.min.css">
     <!-- endbuild -->
 
 	<title>Inicio - LaptopsGamer</title>
@@ -191,36 +191,11 @@
 
 	<!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- build:js dist/index.js -->
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-    	$(function(){
-    		$("[data-toggle='popover']").popover();
-    		$(".carousel").carousel({
-    			interval: 4000
-    		});
-    		$("#formulario").on("show.bs.modal", function(e) {
-    			console.log("El modal se esta abriendo");
-    			$("[data-toggle='modal']").removeClass("btn-info");
-    			$("[data-toggle='modal']").addClass("btn-outline-info");
-    			$("[data-toggle='modal']").prop("disabled", true);
-    		});
-    		$("#formulario").on("shown.bs.modal", function(e) {
-    			console.log("El modal se ha abierto");
-    		});
-    		$("#formulario").on("hide.bs.modal", function(e) {
-    			console.log("El modal se esta cerrando");
-    			$("[data-toggle='modal']").removeClass("btn-outline-info");
-    			$("[data-toggle='modal']").addClass("btn-info");
-    			$("[data-toggle='modal']").prop("disabled", false);
-    		});
-    		$("#formulario").on("hidden.bs.modal", function(e) {
-    			console.log("El modal se ha cerrado");
-    		});
-    	});
-    </script>
+    <script src="js/index.js"></script>
     <!-- endbuild -->
 </body>
 </html>

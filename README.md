@@ -1,2 +1,4 @@
-## Proyecto del Módulo 4
-En este repositorio se encuentra el proyecto de la semana 4 del curso **Diseñando Páginas Web con Bootstrap 4** de la *Universidad Austral*
+# Laptops Gamer
+Página web desarrollada con **Bootstrap 4**
+
+<a href="https://jonathangalvanperez.github.io/laptops-gamer/">![image](https://user-images.githubusercontent.com/44724362/125230793-e8557180-e2af-11eb-9c7e-746b47b3818e.png)
